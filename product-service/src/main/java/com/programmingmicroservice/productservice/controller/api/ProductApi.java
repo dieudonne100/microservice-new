@@ -21,7 +21,7 @@ public interface ProductApi {
     void createProduct(@RequestBody ProductRequest productRequest);
 
 
-    @GetMapping(value = API_ROOT + "/api/product/productlist", produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(value = API_ROOT + "/api/product/productList", produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseStatus(HttpStatus.OK)
     List<ProductResponse> getAllProducts();
 }

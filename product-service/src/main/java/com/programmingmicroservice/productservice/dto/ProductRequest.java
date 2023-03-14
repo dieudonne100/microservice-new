@@ -1,10 +1,7 @@
 package com.programmingmicroservice.productservice.dto;
 
 import com.programmingmicroservice.productservice.model.Product;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.math.BigDecimal;
 

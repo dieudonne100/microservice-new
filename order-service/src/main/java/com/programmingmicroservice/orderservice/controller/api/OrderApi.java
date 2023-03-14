@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import static com.programmingmicroservice.orderservice.utils.Constants.API_ROOT;
 
 public interface OrderApi {
-    @PostMapping(value = API_ROOT + "/orders/create",consumes = MediaType.APPLICATION_JSON_VALUE,produces = MediaType.APPLICATION_JSON_VALUE)
+    @PostMapping(value = API_ROOT + "/api/orders/create",consumes = MediaType.APPLICATION_JSON_VALUE,produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseStatus(HttpStatus.CREATED)
     String placeOrder(@RequestBody OrderRequest orderRequest);
 }
